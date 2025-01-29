@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Meza - CV</title>
+    <!-- Importar fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <style>
+        /* Variables CSS personalizadas */
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #34495E;
+            --accent-color: #3498DB;
+            --background-color: #ECF0F1;
+            --text-color: #2C3E50;
+            --heading-size: 2.5rem;
+            --subheading-size: 1.8rem;
+            --normal-size: 1rem;
+        }
+
+        /* Estilos base y herencia */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Modificar tamaños de fuente */
+        h1 {
+            font-size: var(--heading-size);
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: var(--subheading-size);
+            color: var(--secondary-color);
+        }
+
+        /* Agregar bordes y fondos */
+        .card {
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para la imagen de perfil */
+        .profile-img {
+            width: 200px;
+            height: 300px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+        }
+
+        /* Estilos específicos con códigos hexadecimales */
+        .header {
+            background: linear-gradient(135deg, #2980B9, #3498DB);
+            color: #FFFFFF;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .skill-tag {
+            background-color: #E1F0FF;
+            color: #3498DB;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        /* Estilos para secciones */
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            background-color: #F8FAFC;
+            padding: 1rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            :root {
+                --heading-size: 2rem;
+                --subheading-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <header class="header">
+            <img src="./profile-photo.jpg" alt="Alberto Meza" class="profile-img mx-auto mb-4">
+            <h1 class="text-center mb-2">MEZA PRIETO JOSE ALBERTO</h1>
+            <h2 class="text-center mb-4">COMPUTER ENGINEERING</h2>
+            <p class="text-center">So far, I'm a computer engineering student on the Universidad de Guadalajara, passionate about learning and continuing to learn this technological world that has something new every day.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Left column -->
+            <div class="space-y-6">
+                <div class="card p-6">
+                    <h3 class="section-title">CONTACT</h3>
+                    <div class="contact-info">
+                        <ul class="space-y-2">
+                            <li>📍 Guadalajara, Jalisco. MX</li>
+                            <li>📱 33 - 4007 1020</li>
+                            <li>📱 33 - 1082 5871</li>
+                            <li>Integram: @Albrt_Mez22</li>
+                            <li>📧 albertomeza.ndvpn22@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="section-title">SKILLS</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Python - (Intermediate)</span>
+                        <span class="skill-tag">Java - (Intermediate)</span>
+                        <span class="skill-tag">C/C++ - (Intermediate)</span>
+                        <span class="skill-tag">Microsoft Excel (Intermediate)</span>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="section-title">LANGUAGES</h3>
+                    <div class="space-y-2">
+                        <div class="skill-tag">Spanish (Mother tongue)</div>
+                        <div class="skill-tag">English (Upper - Intermediate)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="md:col-span-2 space-y-6">
+                <div class="card p-6">
+                    <h3 class="section-title">EXPERIENCE</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-lg text-primary">AGENT BILINGUAL: BELIVEO MX</h4>
+                        <p class="text-sm mb-2">2024-2025</p>
+                        <p>As a customer service representative, we manage calls mainly in English from different clients only just on USA and Canada. We adapt to their and their customers' needs and follow the agreed procedures.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-lg text-primary">AGENT BILINGUAL: TELEPERFORMANCE MX</h4>
+                        <p class="text-sm mb-2">2023-2024</p>
+                        <p>As a customer service representative, we manage calls mainly in English from different clients on USA, Canada, Puerto Rico and some European countries.</p>
+                    </div>
+                </div>
+                 
+                <div class="card p-6">
+
+
+                    <h3 class="section-title">PROJECTS</h3>
+
+
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-lg text-primary">MODULAR PROJECT</h4>
+                        <p class="text-sm mb-2">2024</p>
+                        <p>As a modular project of the Universidad de Guadalajara on the CUCEI campus, I developed, together with fellow robotics engineers, an arm with 5 points of freedom with software based on a linear neuron that allows differentiating types of tires for professional use.</p>
+                    </div>
+                </div>    
+
+                <div class="card p-6">
+                    <h3 class="section-title">EDUCATION</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-lg text-primary">COMPUTER ENGINEERING, UNIVERSIDAD DE GUADALAJARA (CUCEI)</h4>
+                        <p class="text-sm mb-2">2021-SO FAR</p>
+                        <p>Current student on the CUCEI campus. A computer engineer designs, develops, and tests computer systems, hardware, and software, ensuring efficient, reliable, and secure technology solutions.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-lg text-primary">PROULEX (EPT CERTIFICATION) #A003117</h4>
+                            <p class="text-sm mb-2">2023</p>
+                            <p>English Proficiency Test in the specialized area of science and engineering.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-lg text-primary">JOBS BYPROULEX</h4>
+                            <p class="text-sm mb-2">2021</p>
+                            <p>750 hours studied, B2 (Upper - Intermediate). I can communicate fluently, understand complex texts, and participate in discussions on various topics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
